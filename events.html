@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/events.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Events</title>
+</head>
+<body style="background-image: url('images/bg1.jpeg');background-repeat: no-repeat;background-size: cover;">
+    <nav>
+        <div class="left">
+            <img src="./images/ambiora.png" alt="logo">
+        </div>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./event.html">Events</a></li>
+            <li><a href="./sponsors.html">Sponsors</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li class="name">
+                <a><ion-icon class="menu" name="menu-outline"></ion-icon></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <div class="container"> -->
+      <h1 class="sch">SCHEDULE</h1>
+        <div class="container">
+        <div class="calendar">
+          <!-- <div class="front"> -->
+            <div class="current-date">
+              <h1 style="font-family: Azonix; font-size: 25px;margin-left: 35%;font-weight: bold;">MARCH 2023</h1>	
+            </div>
+  
+            <div class="current-month">
+              <ul class="week-days">
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+              </ul>
+  
+              <div class="weeks">
+                <div class="first">
+                  <span class="last-month">27</span>
+                  <span class="last-month">28</span>
+                  <!-- <span class="last-month">28</span> -->
+                  <span>01</span>
+                  <span>02</span>
+                  <span>03</span>
+                  <span>04</span>
+                  <span>05</span>
+
+                </div>
+  
+                <div class="second">
+                  <span>06</span>
+                  <span>07</span>
+                  <span>08</span>
+                  <span>09</span>
+                  <span>10</span>
+                  <span><button onclick="events('e15');" class="event">11</button></span>
+                  <span>12</span>
+                  
+                </div>
+  
+                <div class="third">
+                  <span>13</span>
+                  <span>14</span>
+                  <span>15</span>
+                  <span>16</span>
+                  <span>17</span>
+                  <span><button onclick="events('e16');" class="event">18</button></span>
+                  <span><button onclick="events('e17');" class="event">19</button></span>
+                  
+                </div>
+  
+                <div class="fourth">
+                  <span>20</span>
+                  <span>21</span>
+                  <span>22</span>
+                  <span>23</span>
+                  <span>24</span>
+                  <span>25</span>
+                  <span>26</span>
+                  
+                </div>
+  
+                <div class="fifth">
+                  <span>27</span>
+                  <span>28</span>
+                  <span>29</span>
+                  <span>30</span>
+                  <span>31</span>
+                  <span class="last-month">01</span>
+                  <span class="last-month">02</span>
+                  
+                </div>
+              </div>
+            
+            </div>
+            </div>
+            <div class="calendar2">
+                <div style="color: #07074fe3;font-size: large; width: 100%; margin: 4%;" id="e15">
+                    <h1>Events on 11th March</h1><br>
+                    <h3>TECH HUNT <span style="float: right; margin-right: 8%;">10:00 AM - 12:00 PM</span></h3><br>
+                    <h3>WEB DEVELOPMENT WORKSHOP <span style="float: right; margin-right: 8%;">03:00 PM - 04:00 PM</span></h3>
+                </div>
+                <div style="color: #07074fe3;font-size: large; width: 100%; margin: 4%;display: none;" id="e16">
+                    <h1>Events on 18th March</h1><br>
+                    
+                    <h3>CODING HUNT</h3><br>
+                    <h3>SPON-TECH</h3><br>
+                    <h3>TYPE RACER </h3><br>
+                    <h3>MICRO CINETECH</h3><br>
+                    <h3>TECHARENA</h3><br>
+                    <h3>TECHNICAL TROUBLE-SHOOTER</h3><br>
+                    <h3>TECHOCULAR</h3><br>
+                    <h3>UAS WORKSHOP <span style="float: right; margin-right: 8%;">01:00 PM - 02:00 PM</span></h3>
+                </div>
+                <div style="color: #07074fe3;font-size: large; width: 100%; margin: 4%;display: none;" id="e17">
+                    <h1>Events on 19th March</h1><br>
+                    <h3>HACKATHON<span style="float: right; margin-right: 8%;">09:00 AM - 07:00 PM</span></h3>
+                </div>
+            </div>
+        </div>
+          <script>
+            function events(id){
+                document.getElementById('e15').style.display='none';
+                document.getElementById('e16').style.display='none';
+                document.getElementById('e17').style.display='none';
+                document.getElementById(id).style.display='block';
+            }
+          </script>
+</body>
+</html>
