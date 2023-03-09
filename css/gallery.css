@@ -1,0 +1,82 @@
+@import url(//db.onlinewebfonts.com/c/50cd2aad9c8f35800bb6beac3ad42f16?family=Azonix);
+html {
+    scroll-behavior: smooth;
+}
+
+.slider {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.2);
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+ol,
+ul,
+dl {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+h1 {
+    text-align: right;
+    font-family: Azonix;
+    font-size: 100px;
+    color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+      font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 70px;
+    }
+}
+
+.slider-card img {
+    margin: 50px 15px 70px 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 45px -20px #000;
+    height: 320px;
+    transform: scale(0.9);
+    transition: all;
+}
+
+body {
+    background-color: #03002E;
+}
+
+.gallery {
+    background-image: url("/images/gallerybg.png");
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 65px);
+    right: 0;
+    opacity: 1;
+    font-size: 45px !important;
+    z-index: 1;
+    -webkit-text-fill-color: #fff;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 65px);
+    left: 0;
+    opacity: 1;
+    font-size: 45px !important;
+    z-index: 1;
+    -webkit-text-fill-color: #fff;
+}
+
+
